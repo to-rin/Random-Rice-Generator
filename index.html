@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Rice Generator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Outfit:wght@400;700&display=swap"
+        rel="stylesheet">
+  <script type="module" crossorigin src="./assets/index-DEl5Y5Vk.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-6XIQV_UA.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Random Rice Generator</h1>
+            <p class="subtitle">Discover your next delicious meal</p>
+        </header>
+
+        <main>
+            <div class="card">
+                <div class="content-placeholder" id="placeholder">
+                    <p>Click the button to find a rice dish!</p>
+                </div>
+
+                <div id="result-container" class="hidden">
+                    <div class="info-group">
+                        <span class="badge" id="category"></span>
+                        <span class="badge region" id="region"></span>
+                    </div>
+                    <h2 id="result-name"></h2>
+                    <p id="description"></p>
+                    <div id="external-links" class="search-links">
+                        <a id="google-link" href="#" target="_blank" rel="noopener noreferrer"
+                            class="search-btn google">
+                            Search on Google
+                        </a>
+                        <a id="bing-link" href="#" target="_blank" rel="noopener noreferrer" class="search-btn bing">
+                            Search on Bing
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <button id="generate-btn">
+                <span class="btn-text">Generate Rice</span>
+                <span class="btn-icon">🍚</span>
+            </button>
+
+            <div id="map-container" class="hidden">
+                <h3>Where to eat?</h3>
+                <div class="iframe-wrapper">
+                    <iframe id="map-frame" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <section>
+                <div>
+                    <p>This page made with AI. It might include some errors.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
